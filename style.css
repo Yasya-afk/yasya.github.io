@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #f7e8ff);
+    color: #3b2438;
+}
+
+.header {
+    background: #6f3d64;
+    color: white;
+    padding: 18px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 8px 0 0;
+}
+
+.menu {
+    background: #4d2b46;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.button {
+    display: inline-block;
+    background: #d870ad;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #b6498c;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+    align-items: center;
+    background: rgba(255,255,255,0.85);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(81, 43, 74, 0.15);
+}
+
+.hero img, .card img, .gallery img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 5px 16px rgba(81, 43, 74, 0.12);
+}
+
+.card h3 {
+    color: #7c3d69;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(81, 43, 74, 0.12);
+}
+
+.price-table th {
+    background: #6f3d64;
+    color: white;
+}
+
+.price-table th, .price-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ead2e3;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 5px 16px rgba(81, 43, 74, 0.12);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 16px;
+    border: 1px solid #d9a9ca;
+    border-radius: 14px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+.footer {
+    text-align: center;
+    background: #4d2b46;
+    color: white;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe1f1;
+    color: #7c3d69;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    min-height: 315px;
+    border: 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .hero, .cards, .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+}

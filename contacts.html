@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и запись</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Lash Studio Beauty</h1>
+        <p>Наращивание ресниц • Ламинирование • Уход</p>
+    </div>
+    <div class="menu">
+        <a href="index.html" class="button">Главная</a>
+        <a href="catalog.html" class="button">Каталог услуг</a>
+        <a href="gallery.html" class="button">Галерея</a>
+        <a href="contacts.html" class="button">Контакты</a>
+    </div>
+
+    
+<div class="container">
+    <h2>Контакты и запись</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Незнаюкакая, 67</p>
+            <p><b>Телефон:</b> +7 (917) 545-45-73</p>
+            <p><b>Время работы:</b> ежедневно с 10:00 до 20:00</p>
+        </div>
+        <div class="card">
+            <h3>Социальные сети</h3>
+            <ul>
+                <li>Instagram: @svilzzz</li>
+                <li>Telegram: @svilzzz</li>
+                <li>VK: неПомню</li>
+            </ul>
+            <button class="button" onclick="alert('Спасибо за интерес! Мы ответим вам в ближайшее время.')">Написать мастеру</button>
+        </div>
+        <div class="card">
+            <h3>Акция</h3>
+            <p>Скидка 10% на первое посещение при записи через сайт.</p>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <h3>Форма записи</h3>
+        <form>
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Введите имя" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Введите email" required>
+
+            <label>Выберите услугу</label>
+            <select>
+                <option>Классическое наращивание</option>
+                <option>Наращивание 2D</option>
+                <option>Наращивание 3D</option>
+                <option>Ламинирование ресниц</option>
+            </select>
+
+            <label>Комментарий</label>
+            <textarea placeholder="Удобная дата и время"></textarea>
+
+            <button type="button" class="button" onclick="alert('Заявка отправлена! Это учебная форма без отправки на сервер.')">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="footer">
+        <p>© 2026 Lash Studio Beauty. Учебный сайт о наращивании ресниц.</p>
+    </div>
+</body>
+</html>
